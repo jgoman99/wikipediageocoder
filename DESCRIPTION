@@ -1,0 +1,17 @@
+Package: wikipediageocoder
+Title: package to use wikipedia for geocoding
+Version: 0.0.0.9000
+Authors@R: 
+    person("John", "Friedman", , "jgfriedman99@gmail.com", role = c("aut", "cre"))
+Description: package to get latitude and longitude from a location string using wikipedia
+License: use_mit_license()
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+VignetteBuilder: knitr
+Imports:
+	stringr,
+	rvest
+Suggests: 
+	knitr,
+	rmarkdown

@@ -1,0 +1,38 @@
+---
+title: "introduction"
+author: "John Friedman"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+```
+## Introduction to WikipediaGeoCoder
+
+WikipediaGeoCoder is a package designed to use Wikipedia to return the latitude and longitude coordinates of locations. Traditional geocoders are often unable to find the coordinates of historic locations - e.g. old mining towns that are now ghost towns. However,
+this information is often available on wikipedia
+
+
+## Example
+```{r}
+library(wikipediageocoder)
+# location string that google geocoding returns NA
+search_string = 'mare island navy yard'
+page_name = search_for_wikipedia_page("mare island navy yard")
+print(page_name)
+coordinates = geocode_wikipedia_page(page_name)
+print(coordinates)
+
+```
+
+
+
