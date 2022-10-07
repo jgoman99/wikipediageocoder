@@ -1,0 +1,4 @@
+TODO
+added custom google search engine API as a search method, requiring authentication
+add wikipedia page search
+consider rewriting in python - the python wrapper for media wiki api seems better than the r wrapper
